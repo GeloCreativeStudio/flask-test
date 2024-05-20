@@ -10,7 +10,7 @@
     <div id="message"></div>
 
     <script>
-        fetch('/.netlify/functions/flask_function')
+        fetch('/.netlify/functions')
             .then(response => response.json())
             .then(data => {
                 document.getElementById('message').textContent = data.message;
